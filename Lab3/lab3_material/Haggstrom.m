@@ -22,17 +22,17 @@ rgb = label2rgb(If,'jet',[.5 .5 .5]);
 figure
 imshow(rgb)
 title('Watershed Transform')
-Ilabel=bwlabel(If);
-Ilabel2 =bwlabel(maxima);
-
-F=regionprops(Ilabel, 'Area');
-F2=regionprops(Ilabel2, 'PixelList');
-
-areas = zeros(length(F2),1);
-
-for j = 1:length(F2)
-    tempF2 = F2(j).PixelList;
-    radius = max(Idist(tempF2));
-    areas(j) = radius^2 * pi;
-end
+% Ilabel=bwlabel(If);
+% Ilabel2 =bwlabel(maxima);
+% 
+% F=regionprops(Ilabel, 'Area');
+% F2=regionprops(Ilabel2, 'PixelList');
+% 
+% areas = zeros(length(F2),1);
+% 
+% for j = 1:length(F2)
+%     tempF2 = F2(j).PixelList;
+%     radius = max(Idist(tempF2));
+%     areas(j) = radius^2 * pi;
+% end
     
